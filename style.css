@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: black;
+    margin: 0;  /* Deixa sem margem para não aparecer espaçamento entre as imagens */
+    padding: 0;  /* Deixa sem espaçamento na parte interna */
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    padding-bottom: 100px;
+    padding-top: 20px;
+}
+
+ul {
+    height: 25px; 
+    width: 95%;   /* Largura   */
+    display: flex;
+    justify-content: space-between;  /* Alinha nos cantos as duas imagens */
+    list-style-type: none;  /* Tira as bolinhas da imagem */
+    position: fixed;  /* Mantém a barra sempre fixada, ela não vai se movimentar conforme desce */
+}
+.img-topo {
+ height: 25px;   /* Altura */
+}
+
+video {
+    width: 100vw;  /* VW é como determinar a quantidade de % que vai usar na largura da tela */
+    min-height: 80vh;  /* VH é como determinar a quantidade de % que vai usar na altura da tela */
+    
+}
+
+.capa {
+    position: absolute;
+    bottom: 20%;  /* Top - cima, Bottom - Baixo, Left - Esquerda, Right - Direita*/
+    left: 5%;
+    width: 35%;
+    z-index: 3;
+}
+.capa-titulo {
+    color: white;
+    font-size: 80px;  /* Tamanho da fonte */
+    margin-bottom: 35px; /* Margem em baixo */
+    font-weight: bold;  /* Largura da fonte - bold - NEGRITO */
+}
+
+.capa-descricao {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.link-assistir {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;  /* Aqui ele determina 10 de altura e 20 de largura dando espaço */
+    border-radius: 4px;  /* arredonda a borda do botão */
+    cursor: pointer; /* quando colocar o mouse em cima fica a mãozinha pra clicar */
+}
+
+.link-info {
+    background-color: rgba(255, 255, 255, 0.35);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 4px;  /* arredonda a borda do botão */
+    cursor: pointer; /* quando colocar o mouse em cima fica a mãozinha pra clicar */
+} 
+
+.imagem-carrossel {
+    height: 150px;
+    
+
+}
+
+/* Classe usamos . para iniciar
+em um ID usamos # */
+
+#carouselExampleControls {
+    background-color: transparent;
+    position: absolute;
+    bottom: -80px;
+    left: 50px;
+    
+}
+
+.titulo-carrossel {
+    color: white;
+    font: 30px;
+    margin-bottom: 10px;
+}
+
+.botao-som {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 4;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+}
+
+.modal {
+    display: none;
+    /* Diplay Block - Ele fica bloqueado e fixado
+       Display None - Ele desaparece */
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-conteudo {
+    background-color: #181818;
+    margin: 30px auto;
+    padding: 20px;
+    width: 70%;
+    color: white;
+}
